@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import ShoppingBag from "../../../public/shopping-bag.svg";
 import Skeleton, { skeletonTypes } from "../Skeleton";
 import { Card, CardInfo, Description, Price, PriceCard, Text } from "./style";
 
@@ -41,7 +42,23 @@ export default function ItemCard({
           <Skeleton type={skeletonTypes.text} />
         )}
       </Card>
-      <button style={{ width: "100%", background: "red" }}> Comprar </button>
+      <button
+        style={{
+          width: "100%",
+          height: "32px",
+          background: "#0F52BA",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 8,
+          color: "white",
+          borderRadius: "0 0 8px 8px",
+          border: "none",
+        }}
+      >
+        <Image width={12} height={12} src={ShoppingBag} alt="bag icon" />
+        Comprar
+      </button>
     </div>
   );
 }

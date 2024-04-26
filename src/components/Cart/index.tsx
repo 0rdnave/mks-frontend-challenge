@@ -12,6 +12,10 @@ const CartAcordion = styled.div`
   height: 100vh;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
   display: flex;
+
+  @media (max-width: 500px) {
+    max-width: 90vw;
+  }
 `;
 
 const Title = styled.p`
@@ -24,6 +28,7 @@ const Title = styled.p`
 const CartAccordion = () => {
   const { isOpen, toggleCart } = useCart();
 
+  // TODO refatorar para styled component
   return (
     <>
       {isOpen && (

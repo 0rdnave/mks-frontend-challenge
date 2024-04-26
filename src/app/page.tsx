@@ -16,9 +16,9 @@ export default function Home() {
       <QueryClientProvider client={queryClient}>
         <ProductsProvider>
           <CartProvider>
-            <div>
+            <Header />
+            <div style={{ width: "100vw", height: "100vh", overflow: "auto" }}>
               <CartAccordion />
-              <Header />
               <ProductsWrapper />
             </div>
           </CartProvider>

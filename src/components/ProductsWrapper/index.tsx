@@ -10,7 +10,7 @@ export default function ProductsWrapper() {
   const isLoading = productContext.isLoading;
 
   return (
-    <div style={{ width: "100vw", display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <Wrapper>
         {isLoading && <p>Carregando...</p>}
         {productsData &&
