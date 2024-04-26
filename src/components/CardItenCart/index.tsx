@@ -10,7 +10,7 @@ export default function CardItenCart() {
   const productContext = useProductsContext();
   const productsData: IProductsData = productContext.productsData;
 
-  const produ = productsData.products.slice(0, 3);
+  // const produ = productsData.products.slice(0, 3);
 
   return (
     <div
@@ -21,6 +21,7 @@ export default function CardItenCart() {
     >
       {productsData.products.map((produ) => (
         <div
+          key={produ.id}
           style={{
             display: "grid",
             gridTemplateColumns: "1fr 2fr 1fr 1fr",
