@@ -1,5 +1,5 @@
-import { useProductsContext } from "@/src/api/ProductsContext";
-import { IProductsData } from "@/src/interfaces/products";
+import { useProductsContext } from "@/api/ProductsContext";
+import { IProductsData } from "@/interfaces/products";
 import ItemCard from "../ItemCard";
 import { Wrapper } from "./style";
 

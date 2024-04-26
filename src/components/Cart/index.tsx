@@ -1,7 +1,7 @@
-import Close from "@/public/Close_cart.svg";
-import { useCart } from "@/src/context/cartContext";
+import { useCart } from "@/context/cartContext";
 import Image from "next/image";
 import styled from "styled-components";
+import Close from "../../../public/Close_cart.svg";
 import CardItenCart from "../CardItenCart";
 
 const CartAcordion = styled.div`

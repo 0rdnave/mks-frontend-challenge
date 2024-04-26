@@ -1,7 +1,7 @@
 "use client";
-import Cart from "@/public/Cart.svg";
-import { useCart } from "@/src/context/cartContext";
+import { useCart } from "@/context/cartContext";
 import Image from "next/image";
+import Cart from "../../../public/Cart.svg";
 import { Button, HeaderWrapper } from "./style";
 
 export default function Header() {

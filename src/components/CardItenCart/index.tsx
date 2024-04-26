@@ -1,8 +1,8 @@
-import Close from "@/public/Close_cart.svg";
-import { useProductsContext } from "@/src/api/ProductsContext";
-import { IProductsData } from "@/src/interfaces/products";
-import { formatePrice } from "@/src/utils/conversor";
+import { useProductsContext } from "@/api/ProductsContext";
+import { IProductsData } from "@/interfaces/products";
+import { formatePrice } from "@/utils/conversor";
 import Image from "next/image";
+import Close from "../../../public/Close_cart.svg";
 import SpinnerInput from "./InputSpinner";
 import { Text } from "./style";
 

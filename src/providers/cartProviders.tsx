@@ -1,4 +1,4 @@
-import CartContext from "@/src/context/cartContext";
+import CartContext from "@/context/cartContext";
 import React, { PropsWithChildren, Reducer, useReducer, useState } from "react";
 
 interface Product {
